@@ -1,15 +1,16 @@
 public class HW1 {
 
-    public static int getEvenDigitSum(int number){
+    public static int getEvenDigitSum(int num){
 
-        String stringedNumber = String.valueOf(number);
+        int number = num;
         int sum = 0;
         int lastDigit;
         if (number < 0){
             return -1;
         }
 
-        for(int i = 0; i < stringedNumber.length(); i++){
+        for(int i = 0; i < String.valueOf(num).length(); i++){
+            // Can't use number instead of num, because the value changes with each iteration
             // String.valueOf() converts a number to a string
             if(number % 2 == 0){
                 lastDigit = number % 10;
@@ -17,6 +18,7 @@ public class HW1 {
                 number = number / 10;
             }
             number = number / 10;
+            // test
         }
 
         return sum;
