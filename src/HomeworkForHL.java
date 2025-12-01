@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class HomeworkForHL {
-
+    // Decimal to Hexadecimal converter
 
     public static String toHexadecimal(int number){
         String intermediate = "";
